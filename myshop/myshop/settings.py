@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 ]
 EXTERNAL_APPS =[
     'core',
+    'accounts',
 ]
 INSTALLED_APPS.extend(EXTERNAL_APPS)
 
@@ -72,6 +73,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'myshop.wsgi.application'
+
+AUTH_USER_MODEL ='accounts.CustomUserModel'
 
 
 # Database

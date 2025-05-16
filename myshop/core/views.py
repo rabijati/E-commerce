@@ -1,8 +1,14 @@
 from django.shortcuts import render
+from .models import *
 
 # Create your views here.
 def index(request):
-    return render(request,'main/index.html')
+    offer=OfferProduct.objects.all()
+
+    context={
+        'offer':offer
+    }
+    return render(request,'main/index.html',context)
 def shop(request):
     return render(request,'main/shop.html')
 def productDetails(request):
