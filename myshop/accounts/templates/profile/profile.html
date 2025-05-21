@@ -1,0 +1,35 @@
+{% extends 'profile_dashboard.html' %}
+{% load static %}
+
+{% block maincontent %}
+<div class="container-fluid">
+    <div class="card p-4">
+        <div class="row">
+            <div class="col-md-4">
+
+                
+                <img src="{% static 'images/profile.jpg' %}" alt="Default Profile Image"
+                style="width: 200px; height: 200px; padding: 20px; border-radius: 50%; object-fit: contain;">
+
+               
+
+                <center>
+                    <p>Username: sujanthadarai710</p>
+                    <a href="{% url 'update_profile' %}" class="btn btn-success ">Update
+                        Profile</a>
+                </center>
+
+            </div>
+
+            <div class=" col-md-8 mt-4">
+
+                <p> <strong>Fullname: </strong>Sujan Thadarai</p>
+                <p> <strong>Bio</strong> <br>cool</p>
+                <p> <strong>Email: sujanthadarai710@gmail.com</strong> </p>
+                <p> <strong>Phone: 9816107823</strong> </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock maincontent %}

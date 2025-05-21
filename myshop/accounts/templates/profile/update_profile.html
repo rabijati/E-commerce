@@ -1,0 +1,18 @@
+{% extends 'profile_dashboard.html' %}
+{% load static %}
+
+{% block maincontent %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <img src="{% static 'images/profile.jpg' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-6">
+            <form action="">
+                {{form}}
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock maincontent %}
